@@ -20,6 +20,28 @@
         <jdk.version>9.0.4</jdk.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Repository Switchboard</name>
+            <layout>default</layout>
+            <url>http://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
